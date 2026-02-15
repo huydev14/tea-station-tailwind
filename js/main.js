@@ -1,8 +1,8 @@
 import { partnerLogos, productList, partnerLogoBasePath } from "./data.js";
 
-/**
+/* =================
  * PARTNER LOGOS
- */
+ ====================*/
 $(function () {
 	const container = document.getElementById("partner-logo-list");
 
@@ -13,5 +13,23 @@ $(function () {
 		img.alt = logo.alt;
 		img.classList.add("logo-ticker-image");
 		container.appendChild(img);
+	});
+});
+
+/* =================
+ * PRODUCTS
+ ====================*/
+$(function () {
+	// Active tab
+	$("li:first").addClass("activeTab");
+
+	// Change color active tab
+	$("li").on("click", function () {
+		$("li").removeClass("activeTab");
+		$('div[id="products-tabs"] ul .r-tabs-state-active').addClass("activeTab");
+	});
+
+	$("#products-tabs").responsiveTabs({
+		animation: "slide",
 	});
 });
