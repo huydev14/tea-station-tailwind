@@ -56,7 +56,21 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+
+	/* Partner logos */
+	.sub_heading {
+		@apply font-inter text-xs font-medium uppercase text-p-900;
+	}
+
+	.main_heading {
+		@apply mt-2 text-2xl tracking-wide capitalize lg:text-3xl font-lobster;
+	}
 }
 
 @layer utilities {
+	/* Partner logos */
+	.logo-ticker-image {
+		@apply w-auto h-6 lg:h-9
+
+	}
 }

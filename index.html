@@ -15,13 +15,14 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="stylesheet" />
 
 		<!-- SCRIPT -->
+		<script defer src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
 		<script defer type="module" src="./js/main.js"></script>
 	</head>
 
 	<body>
-		<!-----------------  
-        HERO SECTION
-    ------------------>
+		<!------------------------  
+            HERO SECTION
+    -------------------------->
 		<section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip">
 			<div class="container relative flex items-center justify-center w-full h-full xl:justify-start">
 				<!-- Image -->
@@ -46,5 +47,26 @@
 				</div>
 			</div>
 		</section>
+
+		<!----------------------
+        PARTNERS SECTION
+    ------------------------>
+
+		<section id="partner-logos">
+			<div class="container">
+				<!-- Heading -->
+				<div class="mt-10">
+					<h2 class="sub_heading">Có mặt tại</h2>
+					<h1 class="main_heading">Những Nhà Phân Phối <span class="text-gradient">Uy Tín</span></h1>
+				</div>
+
+				<!-- Logos -->
+				<div class="flex mt-9 md:mt-16 [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+					<div id="partner-logo-list" class="flex flex-none logos-wrapper gap-14 pl-14"></div>
+				</div>
+			</div>
+		</section>
+
+		<div class="h-screen"></div>
 	</body>
 </html>
