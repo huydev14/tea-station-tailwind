@@ -4,7 +4,7 @@ import { partnerLogos, productList, partnerLogoBasePath } from "./data.js";
  * Nav
  ====================*/
 $(function () {
-	$(".navbar").hidesroll();
+	$(".navbar").hidescroll();
 
     // Mobile dropdown
     const toggleBtn = $("#toggle_btn")
