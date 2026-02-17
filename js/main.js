@@ -48,3 +48,13 @@ $(function () {
 		animation: "slide",
 	});
 });
+
+/* =================
+ * Best Sellers
+ ====================*/
+ $(function(){
+	$(".slider").slick({
+		autoplay: true,
+		dots: true,
+	})
+ })

@@ -31,6 +31,12 @@
 }
 
 @layer base {
+	:root {
+		--progress-number-bg: theme("colors.n.100");
+		--progress-number-color: theme("colors.n.500");
+		--progressbar-fill: linear-gradient(to right, theme("colors.p.500"), theme("colors.p.900"));
+	}
+
 	html {
 		@apply scroll-smooth;
 	}
@@ -160,5 +166,30 @@
 	.feature-filter {
 		@apply absolute inset-0 transition-all duration-500 opacity-50 bg-p-700 
 		group-hover:bg-p-900 group-hover:opacity-80 -z-10;
+	}
+
+	/* Best sellers section */
+	.best-product-info {
+		@apply mt-4 md:mt-9;
+
+		h3 {
+			@apply text-lg font-semibold text-p-900 md:text-2xl;
+		}
+
+		p {
+			@apply max-w-lg mt-4;
+		}
+	}
+
+	.best-product--left {
+		@apply p-4 lg:pl-0 lg:pr-8;
+	}
+
+	#best-sellers img {
+		@apply max-w-[600px] h-[250px] md:h-[70vh] max-h-[700px] md:rounded-tl-[80px] md:rounded-bl-[80px] object-cover;
+	}
+
+	.slick-dots {
+		bottom: -4rem !important;
 	}
 }
