@@ -192,4 +192,12 @@
 	.slick-dots {
 		bottom: -4rem !important;
 	}
+
+	.benefit-bars {
+		@apply mt-8;
+	}
+
+	.benefit-bars > div {
+		@apply flex flex-col gap-8 mb-8 lg:flex-row;
+	}
 }
