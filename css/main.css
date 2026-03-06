@@ -200,4 +200,15 @@
 	.benefit-bars > div {
 		@apply flex flex-col gap-8 mb-8 lg:flex-row;
 	}
+
+	/* Stats */
+	.stats-item {
+		h1 {
+			@apply text-6xl lg:text-8xl font-lobster text-center tracking-wider leading-none font-bold text-transparent bg-clip-text bg-[linear-gradient(24deg,rgba(255,255,255,1)_40%,rgba(121,220,180,1)_100%)];
+		}
+
+		h2 {
+			@apply mt-2 text-xs text-center lg:text-base text-white/50
+		}
+	}
 }
