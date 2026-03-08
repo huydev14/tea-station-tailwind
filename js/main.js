@@ -90,7 +90,7 @@ $(function () {
 $(function () {
     productList.map((product) => {
         $('#product-items--container').append(`
-			<div class="group relative col-span-3 overflow-hidden hover:shadow-md">
+			<div data-filterable data-filter-category=${product.category} class="group relative col-span-3 overflow-hidden hover:shadow-md">
 				<div class="portfolio-item">
 					<div>
 						<img src="${product.img}" alt="product-img" />
@@ -106,4 +106,49 @@ $(function () {
 			</div>
 		`);
     });
+    $.fn.filterjitsu();
+
+    // Active tab
+    function getAllUrlParam(url) {
+        url = url || window.location.href;
+        param = {};
+
+        const queryString = url.split('?')[1];
+
+        if (!queryString) {
+            return param;
+        }
+
+        const [key, value] = queryString.split('=');
+
+        if (key) {
+            param[key] = value ? value : '';
+        }
+
+        return param;
+    }
+
+    const urlParam = getAllUrlParam(url);
+
+    $('#allProduct-filters a').removeClass('activeFilter');
+
+    const category = urlParam['filter-category'];
+
+    switch (category) {
+        case 'whitetea':
+            $('#f-whitetea').addClass('activeFilter');
+            break;
+        case 'blacktea':
+            $('#f-blacktea').addClass('activeFilter');
+            break;
+        case 'oolong':
+            $('#f-oolong').addClass('activeFilter');
+            break;
+        case 'matcha':
+            $('#f-matcha').addClass('activeFilter');
+            break;
+        default:
+            $('#f-all').addClass('activeFilter');
+            break;
+    }
 });

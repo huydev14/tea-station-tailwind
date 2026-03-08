@@ -225,7 +225,7 @@
 
     /* All products */
     .product-details {
-        @apply group-hover:top-[calc(100%-120px)] absolute top-full flex h-[120px] w-full flex-col items-center justify-center bg-white/70 p-4 text-center backdrop-blur-xs transition-all duration-500;
+        @apply absolute top-full flex h-[120px] w-full flex-col items-center justify-center bg-white/70 p-4 text-center backdrop-blur-xs transition-all duration-500 group-hover:top-[calc(100%-120px)];
 
         h3 {
             @apply text-n-800 text-base tracking-wide capitalize;
@@ -238,5 +238,13 @@
 
     .portfolio-item img {
         @apply transition-all duration-500 group-hover:scale-110;
+    }
+
+    #allProduct-filters a {
+        @apply text-n-500 hover:text-n-700 text-xs font-medium capitalize md:text-base;
+    }
+
+    .activeFilter {
+        @apply text-p-900! border-b-2 border-b-p-900;
     }
 }
