@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/showHideNav.css" />
         <link rel="stylesheet" type="text/css" href="./css/responsive-tabs.css" />
         <link rel="stylesheet" href="./css/animated-counter-prograssbar.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
         <!-- Slick -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -20,10 +21,7 @@
         <!-- FONT -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="stylesheet" />
 
         <!-- JQuery -->
         <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -34,6 +32,7 @@
         <script defer type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
         <script defer src="./js/animated-counter-prograssbar.js"></script>
         <script defer src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script defer type="module" src="./js/main.js"></script>
     </head>
 
@@ -78,31 +77,30 @@
         <section id="hero" class="from-p-100 h-screen max-h-[1100px] overflow-y-clip bg-gradient-to-t to-white">
             <div class="relative container flex h-full w-full items-center justify-center xl:justify-start">
                 <!-- Image -->
-                <div class="absolute right-0 bottom-0 z-0 overflow-hidden md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
+                <div data-aos="fade-left" class="absolute right-0 bottom-0 z-0 overflow-hidden md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
                     <img class="h-full 2xl:[mask-image:linear-gradient(to_left,transparent,black_10%)]" src="./assets/hero_img.png" alt="hero-img" />
                 </div>
 
                 <!-- Content -->
-
                 <div class="z-10 flex flex-col items-center justify-center gap-4 md:gap-9 xl:items-start">
                     <div>
-                        <h2 class="font-inter mb-2 text-center text-xs leading-none font-semibold tracking-wider uppercase md:text-sm xl:text-start">
+                        <h2 class="font-inter mb-2 text-center text-xs leading-none font-semibold tracking-wider uppercase md:text-sm xl:text-start" data-aos="zoom-in">
                             Hơn
                             <span class="text-gradient text-xs md:text-sm">một trăm</span>
                             đơn vị trà
                         </h2>
 
-                        <h1 class="font-lobster text-p-950 text-center text-5xl leading-none tracking-wide capitalize md:text-6xl lg:text-7xl">
+                        <h1 class="font-lobster text-p-950 text-center text-5xl leading-none tracking-wide capitalize md:text-6xl lg:text-7xl" data-aos="zoom-in" data-aos-delay="100">
                             Trà đặc biệt chế tác
                         </h1>
                     </div>
 
-                    <p class="text-n-700 max-w-xl px-4 text-center md:px-0 xl:text-start">
-                        Sứ mệnh của chúng tôi là mang đến cho bạn sự yên bình và kết nối thông qua các hương vị trà được chọn lọc cẩn thận và được tạo ra để
-                        nâng cao trải nghiệm hàng ngày và sức khoẻ toàn diện cho bạn.
+                    <p class="text-n-700 max-w-xl px-4 text-center md:px-0 xl:text-start" data-aos="zoom-in" data-aos-delay="200">
+                        Sứ mệnh của chúng tôi là mang đến cho bạn sự yên bình và kết nối thông qua các hương vị trà được chọn lọc cẩn thận và được tạo ra để nâng cao trải nghiệm hàng ngày và sức khoẻ
+                        toàn diện cho bạn.
                     </p>
 
-                    <button>
+                    <button data-aos="zoom-in" data-aos-delay="300">
                         <a class="btn" href="#products">
                             Tìm hiểu sản phẩm
                             <img src="./assets/right-arrow.svg" alt="right arrow" />
@@ -113,13 +111,13 @@
         </section>
 
         <!----------------------
-        PARTNERS SECTION
+        PARTNERS LOGO SECTION
     ------------------------>
 
         <section id="partner-logos">
             <div class="container">
                 <!-- Heading -->
-                <div class="mt-10">
+                <div class="mt-10" data-aos="fade-right">
                     <h2 class="sub_heading">Có mặt tại</h2>
                     <h1 class="main_heading">
                         Những Nhà Phân Phối
@@ -141,7 +139,7 @@
             <div class="container">
                 <div class="flex flex-col gap-9">
                     <!-- Heading -->
-                    <div class="mt-10">
+                    <div class="mt-10" data-aos="fade-right">
                         <h2 class="sub_heading">Tìm hiểu</h2>
                         <h1 class="main_heading">
                             Sản phẩm
@@ -195,13 +193,11 @@
                                     <h4>Khám phá những lợi ích tiềm năng của "vàng xanh" từ Nhật Bản</h4>
 
                                     <p>
-                                        Sẵn sàng nâng cao sức khỏe của bạn? Hãy làm quen với matcha, loại bột màu xanh lá cây rực rỡ đang làm khuynh đảo thế
-                                        giới chăm sóc sức khỏe. Chứa đầy chất chống oxy hóa và chất dinh dưỡng, matcha cung cấp nguồn năng lượng mạnh mẽ mà
-                                        không gây bồn chồn, nhờ sự kết hợp độc đáo giữa caffeine và L-theanine.
+                                        Sẵn sàng nâng cao sức khỏe của bạn? Hãy làm quen với matcha, loại bột màu xanh lá cây rực rỡ đang làm khuynh đảo thế giới chăm sóc sức khỏe. Chứa đầy chất chống
+                                        oxy hóa và chất dinh dưỡng, matcha cung cấp nguồn năng lượng mạnh mẽ mà không gây bồn chồn, nhờ sự kết hợp độc đáo giữa caffeine và L-theanine.
                                         <br />
-                                        Loại trà này không chỉ tăng cường sự tập trung và trao đổi chất mà còn thêm hương vị thơm ngon cho sinh tố, đồ nướng và
-                                        cà phê latte. Hãy đắm mình vào thế giới matcha và trải nghiệm cách siêu thực phẩm cổ xưa này có thể tiếp thêm sinh lực
-                                        cho cơ thể và trí óc của bạn!
+                                        Loại trà này không chỉ tăng cường sự tập trung và trao đổi chất mà còn thêm hương vị thơm ngon cho sinh tố, đồ nướng và cà phê latte. Hãy đắm mình vào thế giới
+                                        matcha và trải nghiệm cách siêu thực phẩm cổ xưa này có thể tiếp thêm sinh lực cho cơ thể và trí óc của bạn!
                                     </p>
                                     <button>
                                         <a href="/products.html?filter-category=matcha" class="btn">
@@ -221,10 +217,9 @@
                                     <h4>Hành trình khám phá hương vị tinh khiết nhất từ thiên nhiênn</h4>
 
                                     <p>
-                                        Trà trắng, được tôn sùng vì sự nhẹ nhàng và tinh tế của nó, được chế biến từ lá non và nụ của cây Camellia sinensis. Với
-                                        hương hoa nhẹ nhàng và vị ngọt tự nhiên, loại trà này mang đến trải nghiệm nhẹ nhàng nhưng sảng khoái. Giàu chất chống
-                                        oxy hóa và ít caffeine, trà trắng không chỉ làm hài lòng khẩu vị mà còn hỗ trợ sức khỏe, khiến nó trở thành lựa chọn
-                                        hoàn hảo cho những khoảnh khắc thư giãn hoặc trẻ hóa. Khám phá vẻ đẹp thanh bình của trà trắng và nâng tầm nghi thức
+                                        Trà trắng, được tôn sùng vì sự nhẹ nhàng và tinh tế của nó, được chế biến từ lá non và nụ của cây Camellia sinensis. Với hương hoa nhẹ nhàng và vị ngọt tự
+                                        nhiên, loại trà này mang đến trải nghiệm nhẹ nhàng nhưng sảng khoái. Giàu chất chống oxy hóa và ít caffeine, trà trắng không chỉ làm hài lòng khẩu vị mà còn hỗ
+                                        trợ sức khỏe, khiến nó trở thành lựa chọn hoàn hảo cho những khoảnh khắc thư giãn hoặc trẻ hóa. Khám phá vẻ đẹp thanh bình của trà trắng và nâng tầm nghi thức
                                         uống trà của bạn lên một tầm cao mới.
                                     </p>
                                     <button>
@@ -245,13 +240,11 @@
                                     <h4>Mở khóa bí mật của loại trà lành mạnh nhất từ ​​thiên nhiên</h4>
 
                                     <p>
-                                        Bạn có tò mò về bí quyết trường thọ và sống lâu không? Không cần tìm đâu xa, hãy tìm đến trà xanh! Thức uống cổ xưa này,
-                                        được tôn sùng trong nhiều nền văn hóa trên thế giới, chứa đầy chất chống oxy hóa mạnh mẽ có thể thúc đẩy quá trình trao
-                                        đổi chất, tăng cường chức năng não và thúc đẩy sức khỏe tim mạch.
+                                        Bạn có tò mò về bí quyết trường thọ và sống lâu không? Không cần tìm đâu xa, hãy tìm đến trà xanh! Thức uống cổ xưa này, được tôn sùng trong nhiều nền văn hóa
+                                        trên thế giới, chứa đầy chất chống oxy hóa mạnh mẽ có thể thúc đẩy quá trình trao đổi chất, tăng cường chức năng não và thúc đẩy sức khỏe tim mạch.
                                         <br />
-                                        Với hương vị tinh tế và vô số lợi ích cho sức khỏe, trà xanh không chỉ là một thức uống mà còn là một lựa chọn về lối
-                                        sống. Hãy tham gia cuộc cách mạng trà xanh và khám phá cách thức pha chế đơn giản này có thể biến đổi sức khỏe của bạn
-                                        từng ngụm một!
+                                        Với hương vị tinh tế và vô số lợi ích cho sức khỏe, trà xanh không chỉ là một thức uống mà còn là một lựa chọn về lối sống. Hãy tham gia cuộc cách mạng trà xanh
+                                        và khám phá cách thức pha chế đơn giản này có thể biến đổi sức khỏe của bạn từng ngụm một!
                                     </p>
                                     <button>
                                         <a href="/products.html?filter-category=oolong" class="btn">
@@ -271,10 +264,9 @@
                                     <h4>Hương vị đậm đà truyền thống vượt thời gian</h4>
 
                                     <p>
-                                        Hãy thưởng thức hương vị đậm đà, mạnh mẽ của trà đen, được chế tác hoàn hảo cho khẩu vị sành điệu. Mỗi ngụm trà mang đến
-                                        sự pha trộn hài hòa giữa hương vị sâu lắng và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi
-                                        lễ buổi sáng và giờ nghỉ trưa. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở
-                                        thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                                        Hãy thưởng thức hương vị đậm đà, mạnh mẽ của trà đen, được chế tác hoàn hảo cho khẩu vị sành điệu. Mỗi ngụm trà mang đến sự pha trộn hài hòa giữa hương vị sâu
+                                        lắng và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ nghỉ trưa. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất
+                                        tràn đầy năng lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
                                     </p>
                                     <button>
                                         <a href="/products.html?filter-category=blacktea" class="btn">
@@ -295,13 +287,7 @@
 	---------------------->
         <section id="slogan" class="mt-20 overflow-clip">
             <div class="relative flex h-[30vh] max-h-69 min-w-full items-center justify-center overflow-hidden">
-                <video
-                    poster="./assets/video.mp4"
-                    autoplay
-                    loop
-                    muted
-                    class="absolute inset-0 -z-10 min-h-full min-w-full md:top-[-20%] md:left-[-50%] md:translate-x-1/2"
-                >
+                <video poster="./assets/video.mp4" autoplay loop muted class="absolute inset-0 -z-10 min-h-full min-w-full md:top-[-20%] md:left-[-50%] md:translate-x-1/2">
                     <source src="./assets/video.mp4" type="video/mp4" />
                 </video>
 
@@ -320,14 +306,14 @@
             <div class="relative container m-20 text-center">
                 <!-- First row -->
                 <div class="flex w-full flex-col items-center justify-center gap-0 lg:flex-row lg:gap-10">
-                    <div class="feature-card group bg-[url(/assets/benefit_1.jpg)]">
+                    <div class="feature-card group bg-[url(/assets/benefit_1.jpg)]" data-aos="zoom-in">
                         <div class="feature-filter"></div>
                         <h3>Nguồn cung cao cấp</h3>
 
                         <p>Chúng tôi tự hào sản xuất trà ngay tại Hoa Kỳ, sử dụng nguyên liệu chất lượng cao từ các trang trại địa phương.</p>
                     </div>
 
-                    <div class="bg-p-50 feature-card order-first lg:order-0 lg:bg-transparent">
+                    <div class="bg-p-50 feature-card order-first lg:order-0 lg:bg-transparent" data-aos="zoom-in" data-delay="400">
                         <div>
                             <h2 class="sub_heading">Why Us?</h2>
                             <h1 class="main_heading text-center leading-loose">
@@ -340,7 +326,7 @@
                         </div>
                     </div>
 
-                    <div class="feature-card group bg-[url(/assets/pic1.jpg)]">
+                    <div class="feature-card group bg-[url(/assets/pic1.jpg)]" data-aos="zoom-in" data-delay="100">
                         <div class="feature-filter"></div>
                         <h3>Hương vị và pha chế độc đáo</h3>
 
@@ -350,14 +336,14 @@
 
                 <!-- Second row -->
                 <div class="flex w-full flex-col items-center justify-center lg:-mt-20 lg:flex-row lg:gap-10">
-                    <div class="feature-card group bg-[url(/assets/benefit_3.jpg)]">
+                    <div class="feature-card group bg-[url(/assets/benefit_3.jpg)]" data-aos="zoom-in" data-delay="200">
                         <div class="feature-filter"></div>
                         <h3>Tập trung vào sức khỏe</h3>
 
                         <p>Hãy thưởng thức các loại trà tốt cho sức khỏe của chúng tôi, được pha chế cẩn thận để hỗ trợ trí óc, cơ thể và tâm hồn của bạn.</p>
                     </div>
 
-                    <div class="feature-card group bg-[url(/assets/benefit_4.jpg)]">
+                    <div class="feature-card group bg-[url(/assets/benefit_4.jpg)]" data-aos="zoom-in" data-delay="300">
                         <div class="feature-filter"></div>
                         <h3>Trải Nghiệm Cá Nhân Hoá</h3>
 
@@ -374,7 +360,7 @@
             <div class="container my-20">
                 <!-- Title -->
                 <div class="flex flex-col items-start md:items-center lg:items-start">
-                    <div>
+                    <div data-aos="fade-right">
                         <h2 class="sub_heading">Khách hàng yêu thích</h2>
                         <h2 class="main_heading">
                             Những sản phẩm
@@ -382,9 +368,9 @@
                         </h2>
                     </div>
 
-                    <p class="text-n-500 mt-2 max-w-lg pr-16 text-start text-xs md:text-center lg:text-start">
-                        Khám phá những sản phẩm bán chạy nhất của chúng tôi, nơi chất lượng kết hợp hương vị trong mỗi tách trà. Hãy tham gia cùng hàng ngàn
-                        khách hàng hài lòng đã biến những hỗn hợp này thành sở thích của họ và nâng tầm thời gian uống trà của bạn ngay hôm nay!
+                    <p class="text-n-500 mt-2 max-w-lg pr-16 text-start text-xs md:text-center lg:text-start" data-aos="fade-right" data-aos-delay="100">
+                        Khám phá những sản phẩm bán chạy nhất của chúng tôi, nơi chất lượng kết hợp hương vị trong mỗi tách trà. Hãy tham gia cùng hàng ngàn khách hàng hài lòng đã biến những hỗn hợp
+                        này thành sở thích của họ và nâng tầm thời gian uống trà của bạn ngay hôm nay!
                     </p>
                 </div>
 
@@ -398,9 +384,8 @@
                                 <h3>Peppermint Velvet</h3>
 
                                 <p>
-                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng
-                                    cho cả nghi lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng
-                                    lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ nghỉ giải
+                                    lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
                                 </p>
                             </div>
 
@@ -488,9 +473,8 @@
                                 <h3>Chamomile Bliss</h3>
 
                                 <p>
-                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng
-                                    cho cả nghi lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng
-                                    lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ nghỉ giải
+                                    lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
                                 </p>
                             </div>
 
@@ -578,9 +562,8 @@
                                 <h3>Lemon Ginger Zest</h3>
 
                                 <p>
-                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng
-                                    cho cả nghi lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng
-                                    lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ nghỉ giải
+                                    lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
                                 </p>
                             </div>
 
@@ -668,9 +651,8 @@
                                 <h3>Mystic Earl Grey</h3>
 
                                 <p>
-                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng
-                                    cho cả nghi lễ buổi sáng và giờ nghỉ giải lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng
-                                    lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
+                                    Mỗi ngụm mang đến sự pha trộn hài hòa giữa hương vị đậm đà và hương thơm sảng khoái, khiến đây trở thành lựa chọn lý tưởng cho cả nghi lễ buổi sáng và giờ nghỉ giải
+                                    lao buổi chiều. Trải nghiệm sự ấm áp dễ chịu và những phẩm chất tràn đầy năng lượng đã khiến trà đen trở thành thức uống cổ điển được yêu thích trong nhiều thế kỷ.
                                 </p>
                             </div>
 
@@ -811,7 +793,7 @@
                 <div class="bg-p-950/60 h-full w-full p-9 lg:w-2/3">
                     <div class="relative container flex h-full items-center justify-center md:justify-end 2xl:justify-center">
                         <!-- Watermark -->
-                        <div class="absolute top-1/2 right-1/2 hidden translate-x-36 -translate-y-1/2 md:block 2xl:translate-x-0">
+                        <div class="absolute top-1/2 right-1/2 hidden translate-x-36 -translate-y-1/2 md:block 2xl:translate-x-0" data-aos="fade-right">
                             <h1 class="text-p-50 -rotate-90 text-center text-[168px] leading-37 font-bold uppercase opacity-20">
                                 TEA
                                 <br />
@@ -819,19 +801,18 @@
                             </h1>
                         </div>
                         <!-- Main content -->
-                        <div class="relative">
+                        <div class="relative" data-aos="fade-left">
                             <div class="mb-9">
                                 <h2 class="text-p-200! sub_heading">Khám phá</h2>
                                 <h1 class="main_heading text-white">Câu chuyện & sứ mệnh</h1>
                             </div>
 
                             <p class="text-n-200 max-w-80">
-                                Tại Tea Station, chúng tôi tận tâm tạo ra những loại trà đặc biệt tôn vinh hương vị và sức khỏe. Có nguồn gốc từ những thành
-                                phần tốt nhất, các hỗn hợp của chúng tôi được chế tác bằng sự chăm chút và đam mê, đảm bảo mỗi tách trà đều mang đến trải nghiệm
-                                thú vị.
+                                Tại Tea Station, chúng tôi tận tâm tạo ra những loại trà đặc biệt tôn vinh hương vị và sức khỏe. Có nguồn gốc từ những thành phần tốt nhất, các hỗn hợp của chúng tôi
+                                được chế tác bằng sự chăm chút và đam mê, đảm bảo mỗi tách trà đều mang đến trải nghiệm thú vị.
                                 <br />
-                                Cam kết về tính bền vững và hỗ trợ cộng đồng địa phương, chúng tôi mong muốn mang đến cho bạn không chỉ là trà, mà còn là sự kết
-                                nối với thiên nhiên và truyền thống trong từng ngụm trà. Hãy cùng chúng tôi thưởng thức hành trình của trà.
+                                Cam kết về tính bền vững và hỗ trợ cộng đồng địa phương, chúng tôi mong muốn mang đến cho bạn không chỉ là trà, mà còn là sự kết nối với thiên nhiên và truyền thống
+                                trong từng ngụm trà. Hãy cùng chúng tôi thưởng thức hành trình của trà.
                             </p>
                         </div>
                     </div>
@@ -847,7 +828,7 @@
                 <div class="flex w-full flex-col gap-10 lg:flex-row">
                     <div class="border-p-600 flex h-[515px] w-full flex-1 flex-col items-center justify-center gap-9 border border-dotted px-10 py-20">
                         <!-- Title -->
-                        <div>
+                        <div data-aos="fade-down">
                             <h2 class="sub_heading">Có câu hỏi?</h2>
                             <h1 class="main_heading">Liên hệ Tea Station tại</h1>
                         </div>
@@ -886,7 +867,7 @@
                     <!-- Subcribtion form -->
                     <div class="border-p-600 relative flex h-[515px] w-full flex-1 flex-col items-center gap-9 overflow-clip border px-10 py-20 text-center">
                         <!-- heading -->
-                        <div>
+                        <div data-aos="fade-down">
                             <h2 class="sub_heading">Cập nhật bản tin</h2>
                             <h1 class="main_heading">Đăng ký theo dõi</h1>
                         </div>
