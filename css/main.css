@@ -79,7 +79,7 @@
 
     /* Hero section */
     .btn {
-        @apply bg-p-900 hover:bg-p-700 border-p-900 font-inter flex items-center justify-center gap-2 px-4 py-2 text-sm tracking-wider text-white transition-colors duration-500 lg:px-9 lg:py-3;
+        @apply bg-p-900 hover:bg-p-700 border-p-900 font-inter flex items-center justify-center gap-2 px-4 py-2 text-sm tracking-wider text-white transition-colors duration-300 lg:px-9 lg:py-3;
     }
 
     .text-gradient {
@@ -203,6 +203,23 @@
 
         h2 {
             @apply mt-2 text-center text-xs text-white/50 lg:text-base;
+        }
+    }
+
+    /* Contact */
+    .contact-info {
+        @apply w-full;
+
+        > div {
+            @apply bg-p-600 flex items-center gap-2 px-2 py-2;
+        }
+
+        h1 {
+            @apply text-white capitalize;
+        }
+
+        p {
+            @apply mt-2 text-base;
         }
     }
 }
