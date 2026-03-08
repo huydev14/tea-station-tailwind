@@ -111,7 +111,7 @@ $(function () {
     // Active tab
     function getAllUrlParam(url) {
         url = url || window.location.href;
-        param = {};
+        const param = {};
 
         const queryString = url.split('?')[1];
 
@@ -128,7 +128,7 @@ $(function () {
         return param;
     }
 
-    const urlParam = getAllUrlParam(url);
+    const urlParam = getAllUrlParam();
 
     $('#allProduct-filters a').removeClass('activeFilter');
 
