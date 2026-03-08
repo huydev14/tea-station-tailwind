@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TEA STATION</title>
+        <link rel="icon" type="image/png" href="./assets/logo.png" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./dist/output.css" />
+        <link rel="stylesheet" href="./css/showHideNav.css" />
+        <link rel="stylesheet" type="text/css" href="./css/responsive-tabs.css" />
+        <link rel="stylesheet" href="./css/animated-counter-prograssbar.css" />
+
+        <!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- JQuery -->
+        <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- SCRIPT -->
+        <script defer src="./js/jquery.responsiveTabs.js"></script>
+        <script defer src="./js/jquery.hidescroll.js"></script>
+        <script defer type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+        <script defer src="./js/animated-counter-prograssbar.js"></script>
+        <script defer src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+        <script defer type="module" src="./js/main.js"></script>
+    </head>
+
+    <body>
+        <!------------------------  
+            HEADER & NAVIGATION
+    -------------------------->
+        <header class="relative z-50">
+            <div class="navbar flex items-center justify-center">
+                <div class="flex w-full max-w-[1536px] items-center justify-between px-4 py-4 md:px-[72px] md:py-10">
+                    <!-- Logo -->
+                    <a href="./" class="flex flex-none items-center justify-center">
+                        <img src="./assets/logo.png" alt="logo" class="h-16 w-16" />
+                        <p class="font-lobster text-p-900 text-lg capitalize">Tea Station</p>
+                    </a>
+
+                    <!-- Nav Links -->
+                    <nav class="hidden w-full items-center justify-end gap-4 lg:flex lg:gap-8">
+                        <a href="./products.html" class="navLink">Sản Phẩm</a>
+                        <a href="./#story" class="navLink">Giới thiệu</a>
+                        <a href="./#contact" class="navLink">Liên hệ</a>
+                    </nav>
+
+                    <!-- Hamburger Icon -->
+                    <div class="block cursor-pointer lg:hidden" id="toggle_btn">
+                        <img src="./assets/Menu Icon.svg" alt="Hamburger icon" class="size-5" />
+                    </div>
+
+                    <!-- Mobile menu -->
+                    <div class="dropdown-menu lg:hidden">
+                        <a href="./products.html" class="navLink mobileNavLink">Sản phẩm</a>
+                        <a href="/#story" class="navLink mobileNavLink">Giới thiệu</a>
+                        <a href="/#contact" class="navLink mobileNavLink">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!------------------------  
+            All products
+    -------------------------->
+        <section id="products">
+            <main class="container mt-20">
+                <!-- Banner -->
+                <img src="./assets/banners/banner1.jpg" alt="products banner" class="h-[350px] w-full object-cover shadow-xl" />
+
+                <!-- heading -->
+                <div class="mt-4 md:mt-9">
+                    <div>
+                        <h2 class="sub_heading">Shop with us</h2>
+                        <h1 class="main_heading">Tất cả sản phẩm</h1>
+                    </div>
+
+                    <p class="max-w-lg mt-2 text-xs text-n-500">Cho dù bạn là người đam mê trà lâu năm hay mới bước chân vào thế giới trà, chúng tôi ở đây để giúp bạn khám phá loại trà pha trộn yêu thích tiếp theo của mình. Khám phá bộ sưu tập của chúng tôi và trải nghiệm nghệ thuật pha trà trong từng ngụm.</p>
+                </div>
+
+                
+            </main>
+        </section>
+    </body>
+</html>
