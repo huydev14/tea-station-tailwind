@@ -21,14 +21,16 @@ $(function () {
 $(function () {
     const container = document.getElementById('partner-logo-list');
 
-    partnerLogos.forEach((logo) => {
-        const img = document.createElement('img');
+    for (let i = 0; i < 2; i++) {
+        partnerLogos.forEach((logo) => {
+            const img = document.createElement('img');
 
-        img.src = partnerLogoBasePath + logo.fileName;
-        img.alt = logo.alt;
-        img.classList.add('logo-ticker-image');
-        container.appendChild(img);
-    });
+            img.src = partnerLogoBasePath + logo.fileName;
+            img.alt = logo.alt;
+            img.classList.add('logo-ticker-image');
+            container.appendChild(img);
+        });
+    }
 });
 
 /* =================
