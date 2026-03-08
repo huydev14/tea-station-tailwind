@@ -222,4 +222,21 @@
             @apply mt-2 text-base;
         }
     }
+
+    /* All products */
+    .product-details {
+        @apply group-hover:top-[calc(100%-120px)] absolute top-full flex h-[120px] w-full flex-col items-center justify-center bg-white/70 p-4 text-center backdrop-blur-xs transition-all duration-500;
+
+        h3 {
+            @apply text-n-800 text-base tracking-wide capitalize;
+        }
+
+        p {
+            @apply text-n-700 mt-2 line-clamp-2 text-sm tracking-wide;
+        }
+    }
+
+    .portfolio-item img {
+        @apply transition-all duration-500 group-hover:scale-110;
+    }
 }
