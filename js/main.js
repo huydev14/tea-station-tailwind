@@ -90,9 +90,10 @@ $(function () {
  * All products
  ====================*/
 $(function () {
-    productList.map((product) => {
-        $('#product-items--container').append(`
-			<div data-filterable data-filter-category=${product.category} class="group relative col-span-3 overflow-hidden hover:shadow-md">
+    let html = '';
+    productList.forEach((product) => {
+        html += `
+        <div data-filterable data-filter-category=${product.category} class="group relative col-span-3 overflow-hidden hover:shadow-md">
 				<div class="portfolio-item">
 					<div>
 						<img src="${product.img}" alt="product-img" />
@@ -106,8 +107,10 @@ $(function () {
 					</div>
 				</div>
 			</div>
-		`);
+        `;
     });
+    $('#product-items--container').append(html);
+    
     $.fn.filterjitsu();
 
     // Active tab
